@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"/>
 </head>
 <body>
-    <h1>Darien McIntosh</h1>
-    <p>My name is Darien McIntosh, a creative and driven third-year Information Technology student 
-       with a passion for user-centered design. I'm eager to pursue a career as a UI/UX Designer, 
-       where I can combine my technical skills with my creative vision to create intuitive and engaging 
-       digital experiences. I'm constantly seeking opportunities to learn and grow in this field, and I'm excited 
-       to see where my journey takes me.
-    </p>
+    <div class = "container">
+        <h1>Darien McIntosh</h1>
+        <p>A creative and driven third-year Information Technology student 
+        with a passion for user-centered design. I'm eager to pursue a career as a UI/UX Designer, 
+        where I can combine my technical skills with my creative vision to create intuitive and engaging 
+        digital experiences. <br>I'm constantly seeking opportunities to learn and grow in this field, and I'm excited 
+        to see where my journey takes me.
+        </p>
+        <img src="{{ url_for('static', filename='jdm.jpg') }}" alt="JDM Car" width="500">
+    </div>
 </body>
 </html>
